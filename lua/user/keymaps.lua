@@ -39,6 +39,9 @@ keymap("n", "<leader>bd", "<cmd>Bdelete!<CR>", opts)
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
+-- Replace
+keymap("n", "<leader>r", ":%s///g<LEFT><LEFT>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)

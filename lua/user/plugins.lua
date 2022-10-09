@@ -59,6 +59,18 @@ return packer.startup(function(use)
     use({ "lewis6991/impatient.nvim", commit = "b842e16ecc1a700f62adb9802f8355b99b52a5a6" })
     use({ "lukas-reineke/indent-blankline.nvim", commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" })
     use({ "goolord/alpha-nvim", commit = "0bb6fc0646bcd1cdb4639737a1cee8d6e08bcc31" })
+    use({ "farmergreg/vim-lastplace", commit = "cef9d62165cd26c3c2b881528a5290a84347059e" })
+    use({ "windwp/nvim-spectre", commit = "6d877bc1f2262af1053da466e4acd909ad61bc18" })
+    use({ "christoomey/vim-tmux-navigator", commit = "afb45a55b452b9238159047ce7c6e161bd4a9907" })
+    use({
+        "iamcco/markdown-preview.nvim",
+        commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
+        run = function()
+            vim.fn["mkdp#util#install"](0)
+        end,
+    })
+    use({ "tpope/vim-eunuch", commit = "cc564695076d89b3d1e06b2693fca788cfbc5910" })
+    use({ "ggandor/leap.nvim", commit = "5a09c30bf676d1392ff00eb9a41e0a1fc9b60a1b" })
 
     -- Colorschemes
     use({ "navarasu/onedark.nvim", commit = "6c72a9c5681e0ce00e75848d9426b59ba21539a7" })
@@ -91,6 +103,9 @@ return packer.startup(function(use)
     -- Git
     use({ "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" })
     use({ "APZelos/blamer.nvim", commit = "f4eb22a9013642c411725fdda945ae45f8d93181" })
+    use({ "TimUntersberger/neogit", commit = "74c9e29b61780345d3ad9d7a4a4437607caead4a" })
+    use({ "sindrets/diffview.nvim", commit = "a1fbcaa7e1e154cfa793ab44da4a6eb0ae15458d" })
+    use({ "tpope/vim-fugitive", commit = "dd8107cabf5fe85df94d5eedcae52415e543f208" })
 
     -- DAP
     use({ "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" })
