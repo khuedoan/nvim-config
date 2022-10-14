@@ -12,6 +12,6 @@ spectre.setup({
     },
 })
 
-vim.keymap.set("n", "<leader>S", function()
+vim.keymap.set("n", "<leader>R", function()
     spectre.open()
 end, { silent = true })

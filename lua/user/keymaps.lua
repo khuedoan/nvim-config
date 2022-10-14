@@ -36,23 +36,12 @@ keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 -- Close buffers
 keymap("n", "<leader>bd", "<cmd>Bdelete!<CR>", opts)
 
--- Better paste
-keymap("v", "p", '"_dP', opts)
-
 -- Replace
 keymap("n", "<leader>r", ":%s///g<LEFT><LEFT>", opts)
-
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Copy to system clipboard
 keymap("v", "<C-c>", '"+y', opts)
-
--- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
 
 -- Plugins --
 
@@ -60,7 +49,8 @@ keymap("v", ">", ">gv", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader><leader>", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader><leader>", ":Telescope git_files<CR>", opts)
+keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
 keymap("n", "<leader>/", ":Telescope live_grep<CR>", opts)
 keymap("n", "<leader>p", ":Telescope projects<CR>", opts)
 keymap("n", "<leader>,", ":Telescope buffers<CR>", opts)

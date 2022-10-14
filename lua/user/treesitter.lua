@@ -17,6 +17,7 @@ configs.setup({
         "javascript",
         "json",
         "json5",
+        "jsonnet",
         "latex",
         "lua",
         "nix",
@@ -26,17 +27,15 @@ configs.setup({
         "yaml",
     },
 
-    ignore_install = { "" }, -- List of parsers to ignore installing
-    sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
-
     highlight = {
-        enable = true, -- false will disable the whole extension
-        disable = { "css" }, -- list of language that will be disabled
+        enable = true,
     },
     autopairs = {
         enable = true,
     },
-    indent = { enable = true, disable = { "python", "css" } },
+    indent = {
+        enable = true,
+    },
 
     context_commentstring = {
         enable = true,
