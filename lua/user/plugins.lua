@@ -70,6 +70,7 @@ return packer.startup(function(use)
         end,
     })
     use({ "tpope/vim-eunuch", commit = "cc564695076d89b3d1e06b2693fca788cfbc5910" })
+    use({ "tpope/vim-sleuth", commit = "8332f123a63c739c870c96907d987cc3ff719d24" })
     use({ "ggandor/leap.nvim", commit = "5a09c30bf676d1392ff00eb9a41e0a1fc9b60a1b" })
 
     -- Colorschemes
@@ -98,6 +99,7 @@ return packer.startup(function(use)
 
     -- Treesitter
     use({ "nvim-treesitter/nvim-treesitter", commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac" })
+    use({ "RRethy/nvim-treesitter-endwise", commit = "0cf4601c330cf724769a2394df555a57d5fd3f34" })
 
     -- Git
     use({ "lewis6991/gitsigns.nvim", commit = "f98c85e7c3d65a51f45863a34feb4849c82f240f" })
